@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://expo.dev/">
     <img alt="Expo logo" height="128" src="./.github/resources/banner.png">
-    <h1 align="center">Expo</h1>
+    <h1 align="center">Expo — Fork Pessoal de Estudos</h1>
   </a>
 </p>
 
@@ -51,77 +51,92 @@
   </a>
 </p>
 
-## Introduction
+---
 
-Expo is an open-source platform for making universal native apps that run on Android, iOS, and the web. It includes a universal runtime and libraries that let you build native apps by writing React and JavaScript.
+## 📘 Fork Pessoal para Estudos
 
-This repository includes the Expo SDK, Modules API, Go app, CLI, Router, documentation, and various other supporting tools. [Expo Application Services (EAS)](https://expo.dev/eas) is a platform of hosted services that are deeply integrated with Expo open source tools. EAS helps you build, ship, and iterate on your app as an individual or a team.
+> **Autor:** [Wendel Muniz](https://github.com/wendel211)  
+> **Propósito:** Exploração e acompanhamento do ecossistema Expo e React Native.  
+> **Status:** Em andamento — foco em entender a estrutura interna e ferramentas da plataforma.
 
-Read the [Expo Community Guidelines](https://expo.dev/guidelines) before interacting in the repository. Thank you for helping keep the Expo community open and welcoming!
+Este repositório é um **fork pessoal** do projeto oficial **[Expo](https://github.com/expo/expo)**, criado para fins de **aprendizado e acompanhamento técnico**.  
+O foco é compreender como o **SDK Expo** é estruturado e suas atualizações, também como os módulos nativos funcionam e como as ferramentas de build e deploy se integram com **EAS (Expo Application Services)**.
 
-## Table of contents
 
-- [📚 Documentation](#-documentation)
-- [🗺 Project Layout](#-project-layout)
-- [🏅 Badges](#-badges)
-- [👏 Contributing](#-contributing)
-- [❓ FAQ](#-faq)
-- [💙 The Team](#-the-team)
-- [License](#license)
+---
 
-## 📚 Documentation
+## 🎯 Objetivos de Estudo
 
-<p>Learn about building and deploying universal apps <a aria-label="expo documentation" href="https://docs.expo.dev">in our official docs!</a></p>
+- Explorar o funcionamento do **Expo Go**, CLI e SDK.  
+- Entender a **estrutura monorepo** e o gerenciamento de pacotes.  
+- Estudar o **EAS Build**, **EAS Update** e automações de deploy.  
+- Criar exemplos próprios com **módulos nativos personalizados**.  
+- Acompanhar a evolução do **React Native** dentro do ecossistema Expo.  
 
-- [Getting Started](https://docs.expo.dev/)
-- [API Reference](https://docs.expo.dev/versions/latest/)
-- [Using Custom Native Modules](https://docs.expo.dev/workflow/customizing/)
+---
 
-## 🗺 Project Layout
+## 🗺 Estrutura do Projeto
 
-- [`packages`](/packages) All the source code for Expo modules, if you want to edit a library or just see how it works this is where you'll find it.
-- [`apps`](/apps) This is where you can find Expo projects which are linked to the development modules. You'll do most of your testing in here.
-- [`apps/expo-go`](/apps/expo-go) This is where you can find the source code for Expo Go.
-- [`apps/expo-go/ios/Exponent.xcworkspace`](/apps/expo-go/ios) is the Xcode workspace. When developing iOS, always open this instead of `Exponent.xcodeproj` because the workspace also loads the CocoaPods dependencies.
-- [`docs`](/docs) The source code for **https://docs.expo.dev**
-- [`templates`](/templates) The template projects you get when you run `npx create-expo-app`
-- [`react-native-lab`](/react-native-lab) This is our fork of `react-native` used to build Expo Go.
-- [`guides`](/guides) In-depth tutorials for advanced topics like contributing to the client.
-- [`tools`](/tools) contain build and configuration tools.
-- [`template-files`](/template-files) contains templates for files that require private keys. They are populated using the keys in `template-files/keys.json`.
-- [`template-files/ios/dependencies.json`](/template-files/ios/dependencies.json) specifies the CocoaPods dependencies of the app.
+- [`packages/`](/packages): Códigos dos módulos do SDK Expo.  
+- [`apps/`](/apps): Projetos de teste integrados aos módulos.  
+- [`apps/expo-go/`](/apps/expo-go): Código-fonte do app **Expo Go**.  
+- [`docs/`](/docs): Código da documentação em **https://docs.expo.dev**.  
+- [`templates/`](/templates): Templates gerados por `npx create-expo-app`.  
+- [`react-native-lab/`](/react-native-lab): Fork do React Native usado pelo Expo Go.  
+- [`guides/`](/guides): Tutoriais técnicos e guias avançados.  
+- [`tools/`](/tools): Scripts e utilitários internos de build.  
+- [`template-files/`](/template-files): Arquivos com chaves e dependências privadas.  
+
+---
+
+## 📚 Documentação Atualizada (2025)
+
+Acompanhe as versões e guias mais recentes do Expo:
+
+- 📘 [Documentação Oficial](https://docs.expo.dev/)  
+- ⚙️ [API Reference (última versão)](https://docs.expo.dev/versions/latest/)  
+- 🧩 [Custom Native Modules](https://docs.expo.dev/workflow/customizing/)  
+- ☁️ [EAS Build & Submit](https://docs.expo.dev/build/introduction/)  
+- 🚀 [Router e Navegação](https://docs.expo.dev/router/introduction/)  
+- 🧠 [Blog Oficial — Insights e Updates](https://expo.dev/blog)  
+
+---
+
+## 🧠 Conceitos-Chave
+
+- **Expo SDK:** APIs universais para recursos nativos com JS/TS.  
+- **Expo Go:** App cliente para rodar projetos instantaneamente.  
+- **EAS Build:** Compila apps nativos em nuvem (Android/iOS).  
+- **EAS Update:** Atualiza apps publicados sem reenvio às stores.  
+- **Router:** Nova API de rotas baseada em filesystem (Next.js-like).  
+- **Metro Bundler:** Empacotador JS usado pelo React Native.  
+
+---
 
 ## 🏅 Badges
 
-Let everyone know your app can be run instantly in the _Expo Go_ app!
-<br/>
-
-[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
-
 [![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
-```md
-[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
+---
 
-[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
-```
+## 🤝 Contribuição e Créditos
 
-## 👏 Contributing
+Este fork é **somente para estudos**, sem alterações de código destinadas à redistribuição pública.  
+Para contribuir com o projeto original, acesse:  
+👉 [Expo Contributing Guide](https://github.com/expo/expo/blob/main/CONTRIBUTING.md)
 
-If you like Expo and want to help make it better then check out our [contributing guide](/CONTRIBUTING.md)! Check out the [CLI package](https://github.com/expo/expo/tree/main/packages/%40expo/cli) to work on the Expo CLI.
+---
 
-## ❓ FAQ
+## 🪪 Licença
 
-If you have questions about Expo and want answers, then check out our [Frequently Asked Questions](https://docs.expo.dev/faq/)!
+Este projeto mantém a licença **[MIT](LICENSE)** original.  
+Todo o código e marca pertencem à **Expo** e seus colaboradores.  
+As modificações aqui são de caráter **educacional e pessoal**.
 
-If you still have questions you can ask them on our [Discord and Forums](https://chat.expo.dev) or X [@expo](https://x.com/expo).
+---
 
-## 💙 The Team
-
-Curious about who makes Expo? Here are our [team members](https://expo.dev/about)!
-
-## License
-
-The Expo source code is made available under the [MIT license](LICENSE). Some of the dependencies are licensed differently, with the BSD license, for example.
-
-<img alt="Star the Expo repo on GitHub to support the project" src="https://user-images.githubusercontent.com/9664363/185428788-d762fd5d-97b3-4f59-8db7-f72405be9677.gif" width="50%">
+<p align="center">
+  <img alt="Star the Expo repo on GitHub to support the project" src="https://user-images.githubusercontent.com/9664363/185428788-d762fd5d-97b3-4f59-8db7-f72405be9677.gif" width="50%">
+  <br/>
+  <sub>⭐ Fork mantido para estudo contínuo das ferramentas e atualizações do ecossistema Expo.</sub>
+</p>
